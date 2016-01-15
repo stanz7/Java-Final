@@ -3,7 +3,7 @@ Jason Dong, Leith Conybeare, Stanley Zeng
 
 Projected Date of Completion    Task
 
-01-16                           Finish  Character, Monster, Hero, Warrior, Mage, Archer classes
+01-16                           Finish  Character, Monster, Hero, Warrior, Mage, Archer, Team classes
 
 01-18                           Fully functional battles
 

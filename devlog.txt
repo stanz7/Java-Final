@@ -1,5 +1,5 @@
 Development Log for Team MILK
-Jason Dong, Leith Conybeare, Stanley Zeng
+Jason Dong, Leith Conybeare, Stanley Zenggit st
 
 1/13/16 Files created:
             Character.java
@@ -22,5 +22,5 @@ Jason Dong, Leith Conybeare, Stanley Zeng
             Character.java   wrote constructors,accessors,mutators
                              wrote methods for attack,miss,attDmgCalc,critial,toString,takeDamage,attackSummary
                              created more instance variables
-                             tested methods - no discovered issues
+                             tested methods - no issues discovered
                     
