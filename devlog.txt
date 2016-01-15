@@ -1,1 +1,26 @@
-1/14/16 (Warrior.java,Hero.java) Stanley Zeng
+Development Log for Team MILK
+Jason Dong, Leith Conybeare, Stanley Zeng
+
+1/13/16 Files created:
+            Character.java
+            Monsters.java
+            Hero.java
+
+        Jason Dong
+            Character.java  created instance variables
+
+1/14/16 Files created:
+            Warrior.java
+            Mage.java
+            Archer.java
+
+        Stanley Zeng
+            Warrior.java
+            Hero.java
+
+        Jason Dong
+            Character.java   wrote constructors,accessors,mutators
+                             wrote methods for attack,miss,attDmgCalc,critial,toString,takeDamage,attackSummary
+                             created more instance variables
+                             tested methods - no discovered issues
+                    
