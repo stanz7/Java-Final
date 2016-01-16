@@ -15,12 +15,19 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
             Archer.java
 
         Stanley Zeng
-            Warrior.java
-            Hero.java
+            Warrior.java wrote def Constructor and skill names
+            Hero.java wrote def Constructor and skill names
 
         Jason Dong
             Character.java   wrote constructors,accessors,mutators
                              wrote methods for attack,miss,attDmgCalc,critial,toString,takeDamage,attackSummary
                              created more instance variables
                              tested methods - no issues discovered
+
+1/15/16 Files created:
+            
+        Stanley Zeng
+            Archer.java created some skill methods(blindingshot, volley) 
+            Mage.java created some skill methods(heal, fire)
+            
                     
