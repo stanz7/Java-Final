@@ -30,4 +30,17 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
             Archer.java created some skill methods(blindingshot, volley) 
             Mage.java created some skill methods(heal, fire)
             
+            
+1/18/16 
+
+        Stanley Zeng
+        Archer.Java 85% complete, missing the priority instance variable
+        Mage.java complete, added attributes to fire() and ice()
+        Added Attribute to Combatant class
+        
+1/20/16
+
+        Stanley Zeng
+        Warrior.java 85% complete, missing the priority instance varible.
+        
                     
