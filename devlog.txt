@@ -43,4 +43,27 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
         Stanley Zeng
         Warrior.java 85% complete, missing the priority instance varible.
         
+1/22/16
+
+        Stanley Zeng
+            Files Created:(mostly monsters)
+                        Fenrir.java created constuctor and basic attack methods (80% done)
+                        Slime.java created constructor and basic attack methods (80% done)
+                        Behemoth.java intended as a boss(?) created constructor, skills, and basic attack methods (70%)
+                        
+
+        Stanley Zeng
+            Files Created:
+                        Ogre.java created constructor, still need to create methods
+1/24/16
+   
+        Stanley Zeng
+            Files Created:
+                        Rogue.java 95% completed, class with heightened speed and accuracy, all methods working, compiles fine
+                        (might have to change the DarkSight method... but it's working for now)
+            Updated:
+                        Warrior.java 99% complete, all methods working, compiles fine
+                        Mage.java 99% complete, all methods working, compiles fine
+                        Archer.java 99% complete, all methods working, compiles fine
+                        
                     
