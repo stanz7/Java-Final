@@ -50,8 +50,10 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
                         Fenrir.java created constuctor and basic attack methods (80% done)
                         Slime.java created constructor and basic attack methods (80% done)
                         Behemoth.java intended as a boss(?) created constructor, skills, and basic attack methods (70%)
+            Files Updated:
+                        Combatant.java created the weakness and element instance variables as well as their corresponding                              accessors and mutators
                         
-
+1/23/16
         Stanley Zeng
             Files Created:
                         Ogre.java created constructor, still need to create methods
