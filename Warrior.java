@@ -1,23 +1,24 @@
-public Warrior extends Playable{
-   
-   public Warrior(){ //default constructor
-        Rep = 0;
-        EXP = 0;
-        
+public class Warrior extends Playable {
+    
+    public Warrior (String name) {
+        setName(name);
+        setHealth(150);
     }
     
-    public int DemoralizingStrike(){
+
+    
+    public int DemoralizingStrike(Character target){
         //increases priority will implement later
         mana -= 4;
-        int damage = (int)(Math.random() * ((Warrior.getStrength()) - (Warrior.getStrength() - 20)) +(Warrior.getStrength() - 20));
+        int damage = (int)(Math.random() * (getStrength() - (getStrength() - 20)) +(getStrength() - 20));
       return damage;
         
     }
     
-    public int PowerStrike(){
+    public int PowerStrike(Character target){
         //power strike!!!
         mana -= 4;
-        int damage = ((int)(Math.random() * ((Warrior.getStrength()) - (Warrior.getStrength() - 20)) +(Warrior.getStrength() - 20)))*2;
+        int damage = ((int)(Math.random() * (getStrength() - (getStrength() - 20)) +(getStrength() - 20)))*2;
         return damage;
             
     }
@@ -27,10 +28,13 @@ public Warrior extends Playable{
       //  strength += 
  // }
     
-    public int NormalAttack(){
+    public int NormalAttack(Character target){
         //normal attack 
-        attack();
+        int damage = (int)(Math.
+        random() * (getStrength() - (getStrength() - 20)) +(getStrength() - 20));
+        return damage;
     }
     
+
     
 }
