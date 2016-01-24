@@ -63,9 +63,15 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
             Files Created:
                         Rogue.java 95% completed, class with heightened speed and accuracy, all methods working, compiles fine
                         (might have to change the DarkSight method... but it's working for now)
+                        Leviathan.java 99% completed, new boss monster, all methods working, compiles fine
             Updated:
                         Warrior.java 99% complete, all methods working, compiles fine
                         Mage.java 99% complete, all methods working, compiles fine
                         Archer.java 99% complete, all methods working, compiles fine
+                        Behemoth.java 99% complete, all methods working, compiles fine
+                        Slime.java 99% complete, all methods working, compiles fine
+                        Fenrir.java 99% complete, all methods working, compiles fine
+                        Ogre.java 99% complete, all methods working, compiles fine
+                        
                         
                     
