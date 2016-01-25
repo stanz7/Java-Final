@@ -30,4 +30,55 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
             Archer.java created some skill methods(blindingshot, volley) 
             Mage.java created some skill methods(heal, fire)
             
+            
+1/18/16 
+
+        Stanley Zeng
+        Archer.Java 85% complete, missing the priority instance variable
+        Mage.java complete, added attributes to fire() and ice()
+        Added Attribute to Combatant class
+        
+1/20/16
+
+        Stanley Zeng
+        Warrior.java 85% complete, missing the priority instance varible.
+        
+1/22/16
+
+        Stanley Zeng
+            Files Created:(mostly monsters)
+                        Fenrir.java created constuctor and basic attack methods (80% done)
+                        Slime.java created constructor and basic attack methods (80% done)
+                        Behemoth.java intended as a boss(?) created constructor, skills, and basic attack methods (70%)
+            Files Updated:
+                        Combatant.java created the weakness and element instance variables as well as their corresponding                              accessors and mutators
+                        
+1/23/16
+        Stanley Zeng
+            Files Created:
+                        Ogre.java created constructor, still need to create methods
+1/24/16
+   
+        Stanley Zeng
+            Files Created:
+                        Rogue.java 95% completed, class with heightened speed and accuracy, all methods working, compiles fine
+                        (might have to change the DarkSight method... but it's working for now)
+                        Leviathan.java 99% completed, new boss monster, all methods working, compiles fine
+            Updated:
+                        Warrior.java 99% complete, all methods working, compiles fine
+                        Mage.java 99% complete, all methods working, compiles fine
+                        Archer.java 99% complete, all methods working, compiles fine
+                        Behemoth.java 99% complete, all methods working, compiles fine
+                        Slime.java 99% complete, all methods working, compiles fine
+                        Fenrir.java 99% complete, all methods working, compiles fine
+                        Ogre.java 99% complete, all methods working, compiles fine
+                        
+                        
+1/25/16
+
+        Stanley Zeng
+        
+            Update:
+                        All Monster classes with method behavior(Originally written by Jason), changed attack methods to work with                            behavior.
+                        
                     
