@@ -1,4 +1,4 @@
-public class Slime extends Combatant {
+public class Slime extends Combatant implements NonPlayable {
     
     public Slime(){
         name = "Slime";
@@ -16,22 +16,32 @@ public class Slime extends Combatant {
         //goldReward = (int)(Math.random() * 100 - 40 + 100);
     }
     
+    public void behavior () {
+        if ( Game.getCombat().getTurnCounter() % 3 == 0 )
+            SlimeSmash(Game.getParty().getMember((int) (Math.random() * 3)));
+        if ( health > healthMax / 2 )
+            attack( Game.getParty().getMember( (int) (Math.random() * 3) ) );
+        if ( health < healthMax / 2 )
+            SlimeSmash(Game.getParty().getMember((int) (Math.random() * 3)));
+    }
+    
+    
     public boolean isAlive(){
         return isAlive();
     }
     
     
     
-    public int attack(){
-        int damage = getStrength() * 1;
-        return damage;
+        public void attack(Combatant target){
+        int damage = strength * 10  - target.getResistance() * 5;
+        target.setHealth( target.getHealth() - damage );
+    
     }
     
-    public int SlimeSmash(){
+    public void SlimeSmash(Combatant target){
         mana -= 5;
-        int damage = getStrength() * 3;
-        return damage;
-        
-
-    }
+        int damage = strength * 12  - target.getResistance() * 5;
+        target.setHealth( target.getHealth() - damage );
+    
+}
 }
