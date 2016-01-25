@@ -1,5 +1,5 @@
 public class Behemoth extends Combatant implements NonPlayable{
-    //boss?
+    //boss??
     public Behemoth(){
         setHealth(200);
         name = "Behemoth";
