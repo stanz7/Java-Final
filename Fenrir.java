@@ -1,4 +1,4 @@
-public class Fenrir extends Combatant {
+public class Fenrir extends Combatant implements NonPlayable{
     
     public Fenrir(){
         name = "Fenrir";
@@ -20,12 +20,19 @@ public class Fenrir extends Combatant {
         return isAlive();
     }
     
+    public void behavior () {
+        if ( Game.getCombat().getTurnCounter() % 3 == 0 )
+            slash(Game.getParty().getMember((int) (Math.random() * 3)));
+        if ( health > healthMax / 2 )
+            attack( Game.getParty().getMember( (int) (Math.random() * 3) ) );
+        if ( health < healthMax / 2 )
+            slash(Game.getParty().getMember((int) (Math.random() * 3)));
+    }
     
     
-    public int attack(Combatant target){
-        element = "ice";
-        int damage = ((int)(Math.random() * (getStrength() - (getStrength() - 10)) + (getStrength())));
-        return damage;
+    public void attack (Combatant target) {
+        int damage = strength * 10  - target.getResistance() * 5;
+        target.setHealth( target.getHealth() - damage );
     }
     
     public int slash(Combatant target){
