@@ -31,7 +31,21 @@ public class Title extends Mode {
         while ( !answer.equals("yes") && !answer.equals("no") ) {
             System.out.println("Enter the story of Working Title?");
             answer = user.nextLine();
+            if ()
         }
+    }
+    
+    public static void prelude () {
+        //short description of plot displayed after starting game
+        System.out.prinln("Story blah blah blah...");
+        /*
+        Technology advance society
+        Running out of resources
+        Find new infinite power source
+        Tessalact falls from the sky
+        breaks into three peaces
+        heroes set out to find them
+        */
     }
     
     public static void back () {
