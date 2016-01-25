@@ -74,4 +74,11 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
                         Ogre.java 99% complete, all methods working, compiles fine
                         
                         
+1/25/16
+
+        Stanley Zeng
+        
+            Update:
+                        All Monster classes with method behavior(Originally written by Jason), changed attack methods to work with                            behavior.
+                        
                     
