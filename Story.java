@@ -103,20 +103,69 @@ public class Story {
             }
  
         }
+        
+        Ch1();
     }
  
   
-  /*
   
     //runs the first story block
     public static void Ch1() {
         //prints story
         System.out.println( "Story" );
+       
         //DECISION POINT 1
-        answer = Game.getScanner().next();
+        System.out.println( "decision 1" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
         
+        answer = Game.getScanner().nextLine().toUpperCase();
         
+        if( answer.equals("A") )
+            morality++;
+        //if ans is B, adds nothing to morality
+        if( answer.equals("C") )
+            morality--;
+       
+        //more story
+        System.out.println( "more story" );
+       
+        //DECISION POINT 2
+        System.out.println( "decision 2" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
+        
+        answer = Game.getScanner().nextLine().toUpperCase();
+        
+        if( answer.equals("A") )
+            morality++;
+        //if ans is B, adds nothing to morality
+        if( answer.equals("C") )
+            morality--;
+            
+        //even more story
+        System.out.println( "even more story" );
+        
+        //DECISION POINT 3
+        System.out.println( "decision 3" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
+        
+        answer = Game.getScanner().nextLine().toUpperCase();
+        
+        if( answer.equals("A") )
+            morality++;
+        //if ans is B, adds nothing to morality
+        if( answer.equals("C") )
+            morality--;
+            
+        //battle 1
     }
+    
+    /*
     
     //runs the second story block, then battle
     public static void Ch2() {

@@ -1,11 +1,11 @@
-public Archer extends Playable{
+public class Archer extends Playable {
    
    public Archer(){ //default constructor
-        Rep = 0;
-        EXP = 0;
+        setHealth(100);
         
     }
     
+    /*
   public int BlindingArrow(Character targets){
       //lowers the monsters accuracy
       mana -= 10;
@@ -25,6 +25,9 @@ public Archer extends Playable{
   
   public void Focus(){
       //increases accuracy and damage
+      mana -= 10;
+      Archer.seAccuracy( Archer.getAccuracy() + 10 );
+      Archer.setStrength( Archer.getStrength() + 10 );
   }
 
   public int SlowingShot(Character targets){
@@ -34,6 +37,6 @@ public Archer extends Playable{
       return damage;
               
   }
-    
+    */
     
 }

@@ -6,26 +6,26 @@ public class Hero extends Character {
     protected int Rep;
 
     public int getEXP(){
-	return EXP;
+	    return EXP;
     }
     public int getRep(){
-	return Rep;
+	    return Rep;
     }
     
 
     
     public int lowerRep(int gRep){
-	return Rep - gRep;
+    	return Rep - gRep;
     }
 
-  public int gainRep(int gRep){
-	return Rep + gRep;
+    public int gainRep(int gRep){
+    	return Rep + gRep;
     }
 
 
     
     public int gainEXP(int gExp){
-	retunr EXP + gExp
-}
+	    retunr EXP + gExp
+    }
 
 }
