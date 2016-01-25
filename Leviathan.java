@@ -1,4 +1,4 @@
-public class Leviathan extends Combatant{
+public class Leviathan extends Combatant implements NonPlayable{
     //boss?
     public Leviathan(){
         setHealth(600);
@@ -18,6 +18,15 @@ public class Leviathan extends Combatant{
 
     }
     
+    public void behavior () {
+        if ( Game.getCombat().getTurnCounter() % 3 == 0 )
+            hail();
+        if ( health > healthMax / 2 )
+            attack(Game.getParty().getMember((int) (Math.random() * 3)));
+        if ( health < healthMax / 2 )
+            mist(Game.getParty().getMember(0), Game.getParty().getMember(1), Game.getParty().getMember(2));
+    }
+    
 
     
     public boolean isAlive(){
@@ -26,9 +35,10 @@ public class Leviathan extends Combatant{
     
     
     
-    public int attack(Playable target){
-        int damage =  ((int)(Math.random() * (getStrength() - (getStrength() - 10)) + (getStrength())));
-        return damage;
+    public void attack (Combatant target) {
+        int damage = strength * 10  - target.getResistance() * 5;
+        target.setHealth( target.getHealth() - damage );
+    
     }
     
     public void mist(Combatant teammate1, Combatant teammate2, Combatant teammate3){
