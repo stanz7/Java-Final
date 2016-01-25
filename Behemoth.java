@@ -1,4 +1,4 @@
-public class Behemoth extends Combatant{
+public class Behemoth extends Combatant implements NonPlayable{
     //boss?
     public Behemoth(){
         setHealth(200);
@@ -11,25 +11,25 @@ public class Behemoth extends Combatant{
         intelligence = 9;
         resistance = 10;
         wisdom = 10;
-        speed = 20;
+        speed = 1;
         accuracy = 20;
         exp = 100;
         //goldReward = (int)(Math.random() * 250 - 80 + 250);
 
     }
     
-
-    
-    public boolean isAlive(){
-        return isAlive();
+    public void behavior () {
+        if ( Game.getCombat().getTurnCounter() % 3 == 0 )
+            sweep();
+        if ( health > healthMax / 2 )
+            attack( Game.getParty().getMember( (int) (Math.random() * 3) ) );
+        if ( health < healthMax / 2 )
+            buff();
     }
     
-    
-    
-    public int attack(Playable target){
-        setStrength(15);
-        int damage =  ((int)(Math.random() * (getStrength() - (getStrength() - 10)) + (getStrength())));
-        return damage;
+    public void attack (Combatant target) {
+        int damage = strength * 10  - target.getResistance() * 5;
+        target.setHealth( target.getHealth() - damage );
     }
     
     public void buff(){
