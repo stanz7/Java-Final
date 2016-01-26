@@ -77,6 +77,8 @@ Jason Dong, Leith Conybeare, Stanley Zenggit st
 1/25/16
 
         Stanley Zeng
+            Files Created:
+                        Defend.java which is a new action
         
             Update:
                         All Monster classes with method behavior(Originally written by Jason), changed attack methods to work with                            behavior.
