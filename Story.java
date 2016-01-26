@@ -98,7 +98,7 @@ public class Story {
                 System.out.println( member.getName() + " chose the dagger.");
             }
             if (answer.equals("E")) {
-                member = new Paladin(member.getName(), this);
+                member = new Paladin(member.getName());
                 System.out.println( member.getName() + " chose the hammer.");
             }
  
@@ -106,14 +106,13 @@ public class Story {
         
         Ch1();
     }
- 
-  
   
     //runs the first story block
-    public static void Ch1() {
+    public void Ch1() {
+        
         //prints story
         System.out.println( "Story" );
-       
+      
         //DECISION POINT 1
         System.out.println( "decision 1" );
         System.out.println( "A: positive" );
@@ -122,12 +121,9 @@ public class Story {
         
         answer = Game.getScanner().nextLine().toUpperCase();
         
-        if( answer.equals("A") )
-            morality++;
-        //if ans is B, adds nothing to morality
-        if( answer.equals("C") )
-            morality--;
-       
+        Outcome decision1 = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = decision1.getMoralityWithResponse( answer, morality );
+            
         //more story
         System.out.println( "more story" );
        
@@ -139,11 +135,8 @@ public class Story {
         
         answer = Game.getScanner().nextLine().toUpperCase();
         
-        if( answer.equals("A") )
-            morality++;
-        //if ans is B, adds nothing to morality
-        if( answer.equals("C") )
-            morality--;
+        Outcome decision2 = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = decision2.getMoralityWithResponse( answer, morality );
             
         //even more story
         System.out.println( "even more story" );
@@ -156,34 +149,84 @@ public class Story {
         
         answer = Game.getScanner().nextLine().toUpperCase();
         
-        if( answer.equals("A") )
-            morality++;
-        //if ans is B, adds nothing to morality
-        if( answer.equals("C") )
-            morality--;
+        Outcome outcomeAtThisPoint = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = outcomeAtThisPoint.getMoralityWithResponse( answer, morality );
             
-        //battle 1
+        Game.getCombat().battle01();
     }
     
-    /*
-    
-    //runs the second story block, then battle
-    public static void Ch2() {
+    public void Ch2() {
+        
+        /*--------------------------------------------------------
+        checks state of morality and displays appropriate story
+        --------------------------------------------------------*/
+        
+        //NEGATIVE story
+        if( morality < -1 ) {
+            System.out.println( "negative story" );
+        }
+        
+        //POSITIVE story
+        else if( morality > 1 ) {
+            System.out.println( "positive story" );
+        }
+        
+        //NEUTRAL story
+        else {
+            System.out.println( "neutral story" );
+        }
+        
+       
+        //DECISION POINT 1
+        System.out.println( "decision 1" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
+        
+        answer = Game.getScanner().nextLine().toUpperCase();
+        
+        Outcome decision1 = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = decision1.getMoralityWithResponse( answer, morality );
+        
+        //DECISION POINT 2
+        System.out.println( "decision 1" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
+        
+        answer = Game.getScanner().nextLine().toUpperCase();
+        
+        Outcome decision2 = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = decision2.getMoralityWithResponse( answer, morality );
+        
+        //DECISION POINT 3
+        System.out.println( "decision 1" );
+        System.out.println( "A: positive" );
+        System.out.println( "B: neutral" );
+        System.out.println( "C: negative" );
+        
+        answer = Game.getScanner().nextLine().toUpperCase();
+        
+        Outcome decision3 = new Outcome( "positiveResponse", "neutralResponse", "bwahahahaha" );
+        morality = decision1.getMoralityWithResponse( answer, morality );
+        
+        //Game.getCombat().battle02();
+    }
+
+    public void Ch3() {
         
     }
     
-    public static void Ch3() {
+    public void Finale() {
         
     }
-    
-    public static void Finale() {
-        
-    }
-    
-    */
     
     public void setMorality(int morality) {
         this.morality = morality;
+    }
+    
+    public int getMorality() {
+        return this.morality;
     }
     
 }
